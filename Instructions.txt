@@ -1,0 +1,14 @@
+1. **Project Title:**  
+   - Study Country Analysis
+
+2. **Tasks and Instructions for Each ETL Stage:**
+   - **Bronze:**  
+     - Connect to snowflake using the credentials from databricks secrets username "key_A" and password "pass_A" and URL "snow_URL" under "snowflake_scope" 
+	 - List the tables (studies, country) from snowflake "ABC" warehouse "BCD" schema and ingest all the tables into Unity catalog schema ai_sandbox.finance_ai
+   
+   - **Silver:**  
+     - Filter the required columns from the bronze country table such as country_name, region, 2 digit country code, 3 digit country code
+   
+   - **Gold:**  
+     1.	Write SELECT query to count number of countries under each region
+	 2.	Write different analytical SELECT queries on silver data
