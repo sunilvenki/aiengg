@@ -13,7 +13,6 @@ st.set_page_config(
 )
 
 # Initialize OpenAI client
-os.environ["OPENAI_API_KEY"] = "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"
 client = OpenAI()
 
 def code_generate(user_input):
